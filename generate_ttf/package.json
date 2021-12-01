@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "grunt-svgicons2svgfont": "^1.0.0",
+    "gulp-svg2ttf": "^2.0.1"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.2.8",
+    "pngjs": "^6.0.0",
+    "svgicons2svgfont": "^10.0.5"
+  }
+}
