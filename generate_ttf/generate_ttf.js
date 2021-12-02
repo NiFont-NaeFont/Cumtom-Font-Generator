@@ -4,7 +4,8 @@ const PNG = require("pngjs").PNG;
 const fs = require("graceful-fs"); // EMFILE 에러 해결을 위한 fs 라이브러리
 const SVGIcons2SVGFontStream = require("svgicons2svgfont");
 
-const save_dir = "./save_dir";
+//const save_dir = "./save_dir";
+const save_dir = process.argv[2]; // 실행 인자 받기. node generate_ttf.js ./save_dir
 
 console.log("\nStart converting into ttf...\n");
 
