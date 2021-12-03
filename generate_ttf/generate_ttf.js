@@ -10,7 +10,7 @@ const save_dir = process.argv[2]; // 실행 인자 받기. node generate_ttf.js 
 console.log("\nStart converting into ttf...\n");
 
 let fontStream = new SVGIcons2SVGFontStream({
-  fontName: "hayunFont",
+  fontName: "customFont",
 });
 
 // 폴더 에러 방지
@@ -59,8 +59,8 @@ for (let i = 0; i < fileNames.length; i++) {
   let png = PNG.sync.read(data);
 
   let imageData = {
-    width: 128,
-    height: 128,
+    width: png.width,
+    height: png.height,
     data: png.data,
   };
 
